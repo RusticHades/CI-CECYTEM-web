@@ -1,0 +1,29 @@
+:root{
+    --fondo-web: #fff;
+}
+
+section .box, form{
+    border-radius: 0px 50px;
+}
+
+section .img-box{
+    border-radius: 50px 0px;
+}
+
+.links .btn{
+    width: 39%;
+    font-size: 13px;
+    transform: translateY(-5px);
+    color: var(--fondo-web);
+}
+
+@media (max-width: 770px){
+    .links .btn{
+        transform: translateY(-16px);
+        font-size: 10px;
+    }
+
+    .links a{
+        transform: translateY(-10px);
+    }
+}
