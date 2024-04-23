@@ -1,0 +1,360 @@
+header section{
+    padding: 0;
+    text-align: center;
+    max-width: 1100px;
+}
+
+header section .titulo{
+    padding: 0;
+}
+
+header section p{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+header .ola{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.temas-importantes{
+    text-align: center;
+}
+
+.contenedor-temas{
+    display: grid;
+    gap: 2rem;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.contenedor-temas article{
+    padding: 0;
+    transition: padding .2s;
+    border: 2px solid #060;
+    border-radius: 10px;
+}
+
+.contenedor-temas article.add{
+    padding-bottom: 30px;
+}
+
+.tema-importante{
+    padding: 0 30px 0;
+    cursor: pointer;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+.frase-conceptos{
+    padding: 30px 0;
+    margin: auto;
+    width: 60%;
+    font-size: 1.3rem;
+}
+
+.tema-importante h3{
+    color: #060;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.tema-importante p{
+    text-align: left;
+    height: 0;
+    font-size: 1.2rem;
+}
+
+.tema-importante span{
+    border-radius: 50%;
+    background-color: #060;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    margin-left: 10px;
+    transition: transform .3s;
+}
+
+.tema-importante span img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    transition: transform .3s;
+}
+
+.tema-importante span img.--rotate{
+    transform: rotate(180deg);
+}
+
+.contenedor-aprendizajes{
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.aprendizajes{
+    display: flex;
+    margin-top: 100px;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.aprendizajes h2{
+    margin-bottom: 50px;
+}
+
+.aprendizajes img{
+    width: 45%;
+}
+
+.aprendizajes div{
+    margin-left: 5%;
+    align-items: center;
+    justify-content: center;
+}
+
+.numero{
+    border-radius: 50%;
+    padding: 5px;
+    background-color: #060;
+    color: #fff;
+    height: 2.5rem;
+    width: 2.5rem;
+    border: 5px solid #fff;
+    text-align: center;
+    align-items: center;
+}
+
+.aprendizaje h3{
+    font-size: 1.3rem;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.aprendizaje p{
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.rueda-comunidad, .info-comunidad{
+    width: 50%;
+}
+
+.info-comunidad p{
+    text-align: justify;
+    font-size: 1.2rem;
+    margin-right: 100px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-comunidad p.active{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-comunidad p.active a{
+    border: 2px solid #060;
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
+    background-color: #060;
+    color: #fff;
+}
+
+.info-comunidad p.active a:hover{
+    color: #060;
+    background-color: #fff;
+}
+
+.comunidad{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-comunidad {
+    position: relative;
+    width: 700px;
+    height: 700px;
+    margin: auto;
+    color: #fff;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #5bac5b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.opcion {
+    font-weight: 700;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: #060;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    border: 2px solid #060;
+    transition: .3s;
+}
+
+.opcion:hover, .opcion.active{
+    cursor: pointer;
+    background-color: #fff;
+    color: #060;
+}
+
+.datos-intitucionales{
+    padding-top: 0;
+}
+
+.datos-intitucionales div{
+    margin-top: 50px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.datos-intitucionales div article{
+    width: 30%;
+}
+
+.datos-intitucionales div article h3{
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.datos-intitucionales div article p{
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+@media (max-width:1250px){
+    .opcion{
+        width: 110px;
+        height: 110px;
+    }
+
+    .info-comunidad p{
+        font-size: 1.1rem;
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .aprendizajes, .aprendizaje img{
+        display: block;
+    }
+
+    .aprendizajes img{
+        width: 80%;
+        display: block;
+        margin: auto;
+    }
+
+    .aprendizajes div{
+        margin: 0;
+    }
+
+    .aprendizaje h3{
+        margin-top: 50px;
+    }
+
+    .aprendizaje p{
+        margin-top: 30px;
+    }
+
+    .comunidad{
+        display: block;
+    }
+
+    .comunidad article{
+        width: 100%;
+    }
+
+    .info-comunidad p{
+        margin: 0;
+        margin: 0 30px ;
+        margin-bottom: 200px;
+    }
+}
+
+@media (max-width: 1000px){
+    header section{
+        transform: translateY(-80px);
+    }
+}
+
+@media (max-width: 700px){
+    .tema-importante h3, .tema-importante p, .frase-conceptos{
+        font-size: 1.3rem;
+    }
+
+    .opcion{
+        transform: translate(10px);
+    }
+}
+
+@media (max-width: 600px){
+    header section p{
+        font-size: 1.1rem;
+    }
+
+    .tema-importante h3, .tema-importante p{
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 500px){
+    header section p{
+        font-size: 1rem;
+    }
+
+    .frase-conceptos{
+        font-size: 1.1rem;
+    }
+
+    .tema-importante h3, .tema-importante p{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 400px) {
+    .tema-importante h3, .tema-importante p{
+        font-size: 12px;
+    }
+}
