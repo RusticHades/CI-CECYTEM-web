@@ -1,0 +1,360 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width: 1250px){
+    .logo h2, .opciones a{
+        font-size: 1.3rem;
+    }
+
+    .logo img{
+        height: 50px;
+    }
+
+    .nav .btn{
+        padding: 10px;
+    }
+
+    .departamento > div.depas h3{
+        font-size: 18px;
+    }
+
+    .departamento > div.depas p{
+        font-size: 15px;
+    }
+
+    .departamento>div:hover h3{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1100px){  
+    .opciones a{
+        font-size: 1.1rem;
+    }
+
+    .nav .btn{
+        font-size: 1rem;
+    }
+
+    .logo img{
+        height: 45px;
+    }
+    .fondo{
+        height: 410px;
+    }
+
+    .opaco h1{
+        font-size: 250%;
+    }
+}
+
+@media (max-width: 950px){
+
+    .nav-link, .nav .btn{
+        display: none;
+    }
+
+    .nav-menu{
+        display: flex;
+    }
+
+    .nav-desplegable{
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        display: block;
+        z-index: 999;
+        position: fixed;
+        top: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: var(--color-fondo);
+        border-radius: 10px;
+        overflow: hidden;
+        width: 95%;
+        height: 0;
+    }
+
+    .links-menu{
+        gap: 3rem;
+        font-size: 20px;
+    }
+
+    .fondo{
+        height: 370px;
+    }
+
+    .opaco h1{
+        font-size: 200%;
+    }
+
+    h2.subtitulos{
+        font-size: 26px !important;
+    }
+
+    .flip-card-back p{
+        font-size: 18px;
+    }
+
+    div#info > div.wrapper > p#desc{
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .departamento > div.depas h3{
+        font-size: 15px;
+    }
+
+    .departamento > div.depas p{
+        font-size: 12px;
+        line-height: 1.35rem;
+    }
+
+    .departamento>div:hover h3{
+        font-size: 14px;
+    }
+
+    #whatdoyousee div > h4#titulos{
+        font-size: 20px;
+    }
+
+    #whatdoyousee div > p#informaciones{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 895px) {
+    .departamento > div.depas p{
+        font-size: 12px;
+        line-height: 1.3rem;
+    }
+
+    footer{
+        margin-top: 600px;
+    }
+}
+
+@media (max-width: 800px){
+    .nav-desplegable li{
+        transform: translateX(-2.5%);
+    }
+
+    .links-menu, .extras li{
+        font-size: 1rem;
+    }
+
+    .fondo{
+        margin-top: 0;
+        height: 450px;
+        background-image: url(/HTML-CSS/imagenes/fondo-medio.jpg);
+    }
+
+    .departamento{
+        margin-top: 15px;
+        flex-direction: column;
+    }
+
+    .departamento > .depas {
+        width: 90%;
+        align-self: center;
+        justify-content: center;
+        margin: 15px 0;
+    }
+
+    #whatdoyousee div > h4#titulos{
+        font-size: 16px;
+    }
+
+    #whatdoyousee div > p#informaciones{
+        font-size: 12px;
+    }
+
+    footer{
+        margin-top: 860px;
+    }
+}
+
+@media (max-width: 650px){
+    .iconos li a{
+        width: 40px;
+        height: 40px;
+    }
+
+    .iconos li a ion-icon{
+        width: 35px;
+        height: 35px;
+    }
+
+    .opaco h1{
+        font-size: 150%;
+        filter: drop-shadow(0px 0px 10px rgb(2, 135, 15));
+    }
+
+    h2.subtitulos{
+        font-size: 22px !important;
+    }
+
+    .flip-card-back p{
+        font-size: 16px;
+    }
+
+    div#info > div.wrapper > p#desc{
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .departamento > div.depas h3{
+        font-size: 14px;
+    }
+
+    .departamento > div.depas p{
+        font-size: 12px;
+        line-height: 1rem;
+    }
+
+    .departamento>div:hover h3{
+        font-size: 12px;
+    }
+
+    #whatdoyousee div > h4#titulos{
+        font-size: 20px;
+    }
+
+    #whatdoyousee div > p#informaciones{
+        font-size: 16px;
+        line-height: 1.2rem;
+    }
+}
+
+@media (max-width: 625px){
+    .nav-desplegable li{
+        transform: translateX(-4%);
+    }
+
+    .iconos{
+        justify-items: center;
+        padding: 0;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    .links-menu, .extras{
+        display: block;
+        padding: 0;
+    }
+
+    .links-menu li, .extras li{
+        margin-top: 1rem;
+    }
+
+    h2.subtitulos{
+        font-size: 20px !important;
+    }
+
+    .flip-card-back p{
+        font-size: 14px;
+    }
+
+    div#info > div.wrapper > p#desc{
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18px;
+    }
+
+    #whatdoyousee div > h4#titulos{
+        font-size: 18px;
+    }
+
+    #whatdoyousee div > p#informaciones{
+        font-size: 14px;
+        line-height: 1.1rem;
+    }
+
+    #whatdoyousee > i.butons{
+        font: 12px;
+        margin: 12px;
+    }
+}
+
+@media(max-width: 580px){
+    #whatdoyousee div > h4#titulos{
+        font-size: 16px;
+    }
+
+    #whatdoyousee div > p#informaciones{
+        font-size: 12px;
+        line-height: 1.1rem;
+    }
+
+    #whatdoyousee > i.butons{
+        font: 12px;
+        margin: 8px;
+    }
+}
+
+@media (max-width: 510px) {
+    .nav-desplegable li {
+        transform: translateX(-6%);
+    }
+
+    .titulo {
+        font-size: 2rem;
+        padding-top: 150px;
+    }
+
+    .flip-card-back p {
+        font-size: 12px;
+    }
+
+    .fondo {
+        position: relative;
+        top: 12px;
+    }
+
+    .wrapper {
+        margin-top: 34px;
+    }
+
+    #whatdoyousee {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #whatdoyousee > div#saber{
+        margin: 10px;
+        text-align: center;
+    }
+
+    #whatdoyousee > i.butons{
+        display: none !important;
+    }
+
+    footer {
+        margin-top: 980px;
+        padding: 0;
+        padding-bottom: 15px;
+    }
+}
+
+@media (max-width: 360px) {
+    #whatdoyousee div > h4#titulos{
+        font-size: 12px;
+    }
+
+    #whatdoyousee div > p#informaciones{
+        font-size: 8px;
+        line-height: 1rem;
+    }
+
+    #whatdoyousee div > h4#titulos{
+        font-size: 14px;
+    }
+
+    #whatdoyousee > i.butons{
+        display: none !important;
+    }
+}
